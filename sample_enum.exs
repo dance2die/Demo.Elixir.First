@@ -8,6 +8,11 @@ defmodule Sample.Enum do
     def first([], val), do: val
 
     def add(list, val \\ 0) do
+        trace(val)
         [val | list]
+    end
+
+    defp trace(string) do
+        IO.puts("the value passed in was #{string}")
     end
 end
