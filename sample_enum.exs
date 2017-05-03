@@ -12,6 +12,11 @@ defmodule Sample.Enum do
         [val | list]
     end
 
+    def map([], _), do: []
+    def map([hd | tl], f) do
+        [f.(hd) | map(tl, f)]
+    end
+
     defp trace(string) do
         IO.puts("the value passed in was #{string}")
     end
