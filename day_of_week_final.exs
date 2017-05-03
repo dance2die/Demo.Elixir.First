@@ -11,4 +11,13 @@ defmodule Sample.Calendar do
             true -> "Invalid Day"
         end
     end
+
+    def day_abbreviation3(:Monday), do: "M"
+    def day_abbreviation3(:Tuesday), do: "Tu"
+    def day_abbreviation3(:Wednesday), do: "W"
+    def day_abbreviation3(:Thursday), do: "Th"
+    def day_abbreviation3(:Friday), do: "F"
+    def day_abbreviation3(:Saturday), do: "S"
+    def day_abbreviation3(:Sunday), do: "Su"
+    def day_abbreviation3(_), do: "Invalid day!!!!"
 end
